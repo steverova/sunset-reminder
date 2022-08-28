@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sunset-reminder/static/css/main.26412d96.css",
+    "main.js": "/sunset-reminder/static/js/main.c53bedaf.js",
+    "static/js/787.fea918ce.chunk.js": "/sunset-reminder/static/js/787.fea918ce.chunk.js",
+    "static/media/TYPEWR__.TTF": "/sunset-reminder/static/media/TYPEWR__.5d9000cac56d57b44a08.TTF",
+    "static/media/Moon Flower.ttf": "/sunset-reminder/static/media/Moon Flower.91e40a2c2f0e43147f4f.ttf",
+    "index.html": "/sunset-reminder/index.html",
+    "main.26412d96.css.map": "/sunset-reminder/static/css/main.26412d96.css.map",
+    "main.c53bedaf.js.map": "/sunset-reminder/static/js/main.c53bedaf.js.map",
+    "787.fea918ce.chunk.js.map": "/sunset-reminder/static/js/787.fea918ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26412d96.css",
+    "static/js/main.c53bedaf.js"
+  ]
+}
