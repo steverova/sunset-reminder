@@ -1,5 +1,7 @@
 import "./App.css";
 import React from "react";
+import image from './assets/images/01.jpg';
+
 
 let indets = [];
 let img = "";
@@ -8,6 +10,7 @@ for (let index = 1; index < 10; index++) {
 
   if(index < 10){
     img = "0"+index+".jpg"; 
+    console.log(`./assets/images/${img}`);
   
   }
 
@@ -15,7 +18,7 @@ for (let index = 1; index < 10; index++) {
     <div className="box">
       <img
         className="center"
-        src={process.env.PUBLIC_URL+img}
+        src={require(`./assets/images/${img}`)}
         alt="hey"
       />
     </div>
