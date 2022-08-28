@@ -1,0 +1,70 @@
+@font-face{
+  font-family: 'Typewriter';
+  src: url('assets/fonts/TYPEWR__.TTF');
+  src: url('assets/fonts/TYPEWR__.TTF') format('ttf'),
+  url('assets/fonts/TYPEWR__.TTF') format('truetype');
+
+    font-family: 'MoonFlower';
+  src: url('assets/fonts/Moon Flower.ttf');
+  src: url('assets/fonts/Moon Flower.ttf') format('ttf'),
+  url('assets/fonts/Moon Flower.ttf') format('truetype');
+
+}
+
+
+.App {
+  text-align: center;
+}
+*{
+  background-color: rgb(201, 129, 179);
+  color: white;
+
+   font-family: "MoonFlower";
+}
+
+.box-body{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+.Title-header{
+   font-size: 100px;
+}
+
+.box{
+  width: 250px;
+  height:250px;
+  background: rgb(209, 209, 157);
+  color: aliceblue;
+  margin: 1em;
+  border: 4px solid white;
+
+
+ display: flex;
+ justify-content: center;
+ vertical-align: middle;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.box:hover{
+   border: 4px solid rgb(179, 99, 155);
+   transform: scale(1.5);
+  transition: transform .5s ease;
+   
+}
+
+hr{
+  border: 0.5px solid rgb(255, 255, 255);
+}
