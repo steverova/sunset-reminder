@@ -1,70 +1,104 @@
-@font-face{
-  font-family: 'Typewriter';
-  src: url('assets/fonts/TYPEWR__.TTF');
-  src: url('assets/fonts/TYPEWR__.TTF') format('ttf'),
-  url('assets/fonts/TYPEWR__.TTF') format('truetype');
+@font-face {
+  font-family: "Typewriter";
+  src: url("assets/fonts/TYPEWR__.TTF");
+  src: url("assets/fonts/TYPEWR__.TTF") format("ttf"),
+    url("assets/fonts/TYPEWR__.TTF") format("truetype");
 
-    font-family: 'MoonFlower';
-  src: url('assets/fonts/Moon Flower.ttf');
-  src: url('assets/fonts/Moon Flower.ttf') format('ttf'),
-  url('assets/fonts/Moon Flower.ttf') format('truetype');
-
+  font-family: "MoonFlower";
+  src: url("assets/fonts/Moon Flower.ttf");
+  src: url("assets/fonts/Moon Flower.ttf") format("ttf"),
+    url("assets/fonts/Moon Flower.ttf") format("truetype");
 }
-
 
 .App {
   text-align: center;
 }
-*{
+body {
   background-color: rgb(201, 129, 179);
   color: white;
 
-   font-family: "MoonFlower";
+  font-family: "MoonFlower";
 }
 
-.box-body{
+.box-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding-bottom: 5em;
+
+  /* text */
+
+  position: relative;
+  text-align: center;
 }
 
-.Title-header{
-   font-size: 100px;
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box{
-  width: 250px;
-  height:250px;
-  background: rgb(209, 209, 157);
+.mytext {
+  font-size: 30px;
+}
+
+.Title-header {
+  font-size: 100px;
+}
+
+.box {
+  width: 240px;
+  height: 240px;
   color: aliceblue;
-  margin: 1em;
-  border: 4px solid white;
-
-
- display: flex;
- justify-content: center;
- vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-img{
+
+.box:hover .hide {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.box:hover {
+  filter: grayscale(100%);
+}
+
+.contenedor {
+  border: 4px solid rgb(255, 255, 255);
+  margin: 1em;
+}
+
+.contenedor:hover{
+  transform: scale(1.25);
+  transition: transform 0.5s ease;
+  border: 4px solid rgb(168, 70, 137);
+  
+}
+
+.contenedor:not(hover) {
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+img {
   width: 100%;
   height: 100%;
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.box:hover{
-   border: 4px solid rgb(179, 99, 155);
-   transform: scale(1.5);
-  transition: transform .5s ease;
-   
+.hide {
+  display: none;
 }
 
-hr{
+hr {
   border: 0.5px solid rgb(255, 255, 255);
 }

@@ -1,10 +1,20 @@
 import "./App.css";
 import React from "react";
-import image from './assets/images/01.jpg';
-
 
 let indets = [];
 let img = "";
+
+let text = [
+  "You make me think of you",
+  "This makes me think of you",
+  "I don't know why we don't know ",
+  "These feelings in me I can't lose",
+  "I don't cry when the sky isn't blue",
+  "Cause I get to thinkin' of you",
+  "This shit sucks...",
+  "Within your touch",
+  "",
+];
 
 for (let index = 1; index < 10; index++) {
 
@@ -15,12 +25,19 @@ for (let index = 1; index < 10; index++) {
   }
 
   indets.push(
-    <div className="box">
-      <img
-        className="center"
-        src={require(`./assets/images/${img}`)}
-        alt="hey"
-      />
+    <div className="contenedor">
+      <div className="box">
+        <div>
+          <img
+            className="center"
+            src={require(`./assets/images/${img}`)}
+            alt="hey"
+          />
+        </div>
+        <div id="mytext" class="centered mytext hide">
+          {text[index - 1]}
+        </div>
+      </div>
     </div>
   );
 
@@ -30,8 +47,8 @@ function App() {
   return (
     <React.Fragment>
       <div className="App">
-        <div className="container col-12">
-          <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 mx-auto pt-5">
+        <div className="container">
+          <div className="col-sm-8 col-md-12 col-lg-12 pt-5">
             <p className="Title-header">A Sunset Reminder</p>
             <hr></hr>
             <div className="box-body">{indets}</div>
