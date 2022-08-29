@@ -5,15 +5,15 @@ let indets = [];
 let img = "";
 
 let text = [
-  "You make me think of you",
-  "This makes me think of you",
-  "I don't know why we don't know ",
-  "These feelings in me I can't lose",
-  "I don't cry when the sky isn't blue",
-  "Cause I get to thinkin' of you",
-  "This shit sucks...",
-  "Within your touch",
-  "",
+  "I'm thinking 'bout you every day",
+  "I think we should spend some time away",
+  "stay with me in Heaven everyday",
+  "I wanna feel your body on me",
+  "Tall palm trees and kaleidoscope dreams",
+  "I'm at home thinking 'bout you and me",
+  "'Cause girl, I got that cabin fever",
+  "You made me a believer",
+  "Eating marshmallow pies, I can see it in your eyes",
 ];
 
 for (let index = 1; index < 10; index++) {
